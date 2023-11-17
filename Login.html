@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/Login.css" />
+    <link rel="icon" type="image/x-icon" href="/Elysium/img/logo2.png" />
+    <title>Inicio de sesion</title>
+  </head>
+  <body>
+    <section class="login">
+      <h1>Inicio de sesión</h1>
+      <form
+        method="post"
+        action="index.php?controller=UsuarioController&action=procesarLogin"
+      >
+        <div class="contenedor-input-iniciar-sesion">
+          <label for="cedula"> Cedula <span class="req">*</span> </label>
+          <input type="text" name="cedula" required />
+        </div>
+
+        <div class="contenedor-input-iniciar-sesion">
+          <label for="contrasena">Contraseña <span class="req">*</span> </label>
+          <input type="password" name="contrasena" required />
+        </div>
+
+        <input
+          type="submit"
+          name="Iniciar-Sesion-Usuario"
+          class="button-inicio-sesion"
+          value="Iniciar Sesion"
+        />
+      </form>
+      <br />
+      <a href="/Elysium/views/Registro.php" class="registro">Registrarse</a>
+    </section>
+  </body>
+</html>
